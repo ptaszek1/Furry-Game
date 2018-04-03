@@ -5,6 +5,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: 'Press Start 2P', cursive, sans-serif;
 }
 
 section#score {
@@ -38,7 +39,9 @@ section#score div {
 }
 
 
-
+.trans {
+  transition: 0.3s all linear;
+}
 
 .furry {
   background-image: url('../images/furry.png');
@@ -73,4 +76,72 @@ section#over pre {
 
 .invisible {
   display: none;
+}
+.gameover {
+  background: rgba(139,0,0,0.6);
+  position: absolute;
+  color: white;
+  width: 640px;
+  height: 640px;
+}
+.gameover p {
+  font-size: 60px;
+  text-align: center;
+  position: absolute;
+  top: 22%;
+  left: 8%;
+}
+.gameover p span {
+  font-size: 18px;
+  margin-top: 100px;
+}
+.gameover .yes {
+  color: lawngreen;
+  cursor: pointer;
+}
+.gameover .no {
+color: red;
+  cursor: pointer;
+}
+
+.choose {
+  background-color: darkred;
+  position: absolute;
+  width: 640px;
+  height: 640px;
+}
+.choose ul {
+  margin-top: 200px;
+}
+.choose li {
+  list-style: none;
+  padding: 15px 0;
+  color: white;
+  text-align: center;
+  border: 1px solid white;
+  margin-right: 40px;
+  cursor: pointer;
+}
+.about {
+  position: absolute;
+  background-color: darkred;
+  width: 640px;
+  height: 640px;
+}
+.about p {
+  color: white;
+  text-align: center;
+  margin-top: 200px;
+}
+.about ul {
+  margin-top: 325px;
+}
+.about li {
+  list-style: none;
+  color: white;
+  border: 1px solid white;
+  padding: 15px 0;
+  margin-right: 40px;
+  text-align: center;
+  cursor: pointer;
 }

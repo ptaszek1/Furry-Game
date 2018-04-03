@@ -5,12 +5,13 @@
     <meta charset="utf-8">
     <title>Javascript Furry game</title>
     <link rel='stylesheet' href='css/style.css'>
-
+  <script src="js/app.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&amp;subset=latin-ext" rel="stylesheet">
 </head>
 
 <body>
 
-  <section id='score'>
+  <section id='score' class="invisible">
     <div>
       SCORE<br>
       <strong>0</strong>
@@ -20,6 +21,23 @@
 
 
   <section id='board'>
+    <section class="choose">
+      <ul>
+        <li class="newGame">New Game</li><br>
+        <li>Best Scores</li><br>
+        <li class="info">About</li>
+      </ul>
+    </section>
+    <section class="about invisible">
+      <p>Game created by Mariusz Ptaszek.</p>
+      <ul>
+        <li class="back">BACK</li>
+      </ul>
+    </section>
+    <section class="gameover invisible">
+      <p>Game Over<br><span>Do you want play again ?</span><br><span class="yes">YES</span>&nbsp;<span class="no">NO</span></p>
+    </section>
+
     <div></div>
     <div></div>
     <div></div>
@@ -127,7 +145,7 @@
 
   </section>
 
-  <script src='js/out.js'></script>
+  <!--<script src='js/out.js'></script>-->
 </body>
 
 </html>
